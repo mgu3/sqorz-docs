@@ -1,4 +1,6 @@
-# Table of Contents
+![image info](sqorz.png){ loading=lazy }
+
+# Home
 
 Welcome to the documentation site for Sqorz!
 
@@ -8,24 +10,20 @@ has a lot of help and useful information built in.
 
 ???+ abstract "Tutorials"
     
-    * [Getting Started](tutorials/initial-setup-for-clubs.md)
-    * [Getting Started](tutorials/initial-setup-for-clubs.md)
-    * [Getting Started](tutorials/initial-setup-for-clubs.md)
-    * [Getting Started](tutorials/initial-setup-for-clubs.md)
-    * [Getting Started](tutorials/initial-setup-for-clubs.md)
-    * [Getting Started](tutorials/initial-setup-for-clubs.md)
+    * [Initial Setup for Clubs](tutorials/Initial-Setup-for-Clubs.md)
+    * [Getting Started](tutorials/Sqorz-Information-Screen.md)
 
 ???+ question "How Tos"
-    
-    * [Getting Started](tutorials/initial-setup-for-clubs.md)
+
+    * [Getting Started](tutorials/Initial-Setup-for-Clubs.md)
 
 ???+ quote "Discussion"
     
-    * [Getting Started](tutorials/initial-setup-for-clubs.md)
+    * [Getting Started](tutorials/Initial-Setup-for-Clubs.md)
 
 ???+ note "Reference"
     
-    * [Getting Started](tutorials/initial-setup-for-clubs.md)
+    * [Getting Started](tutorials/Initial-Setup-for-Clubs.md)
 
 
 [//]: # (For full documentation visit [mkdocs.org]&#40;https://www.mkdocs.org&#41;.)

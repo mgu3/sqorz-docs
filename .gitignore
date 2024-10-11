@@ -1,1 +1,26 @@
-.idea/
+*.log
+*.pot
+*.pyc
+__pycache__/
+_build/
+db.sqlite3*
+/media
+.DS_Store
+.scannerwork
+nohup.out
+*.map
+.coverage.*
+.coverage
+.idea
+.pytest_cache
+geckodriver.log
+post_office_attachments
+htmlcov/
+venv
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+*/cdk.out/*
+*/node_modules/*
+

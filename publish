@@ -1,0 +1,8 @@
+#!/bin/sh
+
+# Remove old files
+aws s3 rm s3://sqorz-docs/ --recursive
+# copy files
+aws s3 cp site/ s3://sqorz-docs/ --recursive
+# Tell cloudformation to reload data
+aws cloudfront create-invalidation --distribution-id EGK19N02WLG3F --paths "/*"

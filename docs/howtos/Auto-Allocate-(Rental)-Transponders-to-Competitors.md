@@ -3,9 +3,9 @@
 
 When register competitors without transponders, choose "Request Transponder" from pull down menu here.
 
-If you have already have Transponder inventry created, you can "Allocate Transponder Immediately".
+If you have already have Transponder inventory created, you can "Allocate Transponder Immediately".
 
-See 8-4. Auto Create transponder inventry to how to create your list of rental transponders.
+See 8-4. Auto Create transponder inventory to how to create your list of rental transponders.
 
 Go to Transponder screen to allocate (rental) transponders.
 

@@ -22,6 +22,8 @@ has a lot of help and useful information built in.
     * [Register Competitors at the Track](howtos/Register-Competitors-at-the-Track.md)
     * [Auto. Allocate (rental) transponders to competitors](howtos/Auto-Allocate-(Rental)-Transponders-to-Competitors.md)
     * [Auto. Create Transponder Inventory](howtos/Auto-Create-Transponder-Inventory.md)
+    * [Merge Classes](howtos/Merge-Classes.md)
+    * [draw and Print Moto Sheets](howtos/Draw-and-Print-Moto-Sheets.md)
 
 ???+ quote "Discussion"
     

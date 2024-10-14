@@ -19,6 +19,8 @@ has a lot of help and useful information built in.
     * [Setup Your Club Race Format](howtos/Setup-Your-Club-Race-Format.md)
     * [Create new event using your club race format](howtos/Create-new-event-using-your-club-race-format.md)
     * [Setup Decoders (Direct to Decoder)](howtos/Setup-Decoders.md)
+    * [Register Competitors at the Track](howtos/Register-Competitors-at-the-Track.md)
+    * [Auto. Allocate (rental) transponders to competitors](howtos/Auto-Allocate-(Rental)-Transponders-to-Competitors.md)
 
 ???+ quote "Discussion"
     

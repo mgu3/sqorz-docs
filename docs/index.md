@@ -15,7 +15,9 @@ has a lot of help and useful information built in.
 
 ???+ question "How Tos"
 
-    * [Getting Started](tutorials/Initial-Setup-for-Clubs.md)
+    * [Import Member Database](howtos/Import-Member-Database.md)
+    * [Setup Your Club Race Format](howtos/Setup-Your-Club-Race-Format.md)
+    * [Create new event using your club race format](howtos/Create-new-event-using-your-club-race-format.md)
 
 ???+ quote "Discussion"
     
@@ -23,31 +25,4 @@ has a lot of help and useful information built in.
 
 ???+ note "Reference"
     
-    * [Getting Started](tutorials/Initial-Setup-for-Clubs.md)
-
-
-[//]: # (For full documentation visit [mkdocs.org]&#40;https://www.mkdocs.org&#41;.)
-
-[//]: # ()
-[//]: # (## Commands)
-
-[//]: # ()
-[//]: # (* `mkdocs new [dir-name]` - Create a new project.)
-
-[//]: # (* `mkdocs serve` - Start the live-reloading docs server.)
-
-[//]: # (* `mkdocs build` - Build the documentation site.)
-
-[//]: # (* `mkdocs -h` - Print help message and exit.)
-
-[//]: # ()
-[//]: # (## Project layout)
-
-[//]: # ()
-[//]: # (    mkdocs.yml    # The configuration file.)
-
-[//]: # (    docs/)
-
-[//]: # (        index.md  # The documentation homepage.)
-
-[//]: # (        ...       # Other markdown pages, images and other files.)
+    * [Search members and register new members at the track](reference/Search-members-and-register-new-members-at-the-track.md)

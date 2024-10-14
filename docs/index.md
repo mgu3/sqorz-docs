@@ -11,13 +11,14 @@ has a lot of help and useful information built in.
 ???+ abstract "Tutorials"
     
     * [Initial Setup for Clubs](tutorials/Initial-Setup-for-Clubs.md)
-    * [Getting Started](tutorials/Sqorz-Information-Screen.md)
+    * [Using the Sqorz Information Screen](tutorials/Sqorz-Information-Screen.md)
 
 ???+ question "How Tos"
 
     * [Import Member Database](howtos/Import-Member-Database.md)
     * [Setup Your Club Race Format](howtos/Setup-Your-Club-Race-Format.md)
     * [Create new event using your club race format](howtos/Create-new-event-using-your-club-race-format.md)
+    * [Setup Decoders (Direct to Decoder)](howtos/Setup-Decoders.md)
 
 ???+ quote "Discussion"
     

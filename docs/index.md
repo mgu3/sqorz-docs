@@ -33,6 +33,7 @@ has a lot of help and useful information built in.
     * [MYLAPS Transponder Activation](howtos/MYLAPS-Transponder-Activation.md)
     * [How to Change the IP Address on a Decoder](howtos/How-to-Change-the-IP-Address-on-a-Decoder.md)
     * [Obtaining the Log File from the Red Chip-X Decoder](howtos/Obtaining-the-Log-File-from-the-Red-Chip-X-Decoder.md)
+    * [How to Save Our Sqorz as a Homescreen Shortcut.md](howtos/How-to-Save-Our-Sqorz-as-a-Homescreen-Shortcut.md)
 
 ???+ quote "Discussion"
     

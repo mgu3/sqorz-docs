@@ -13,6 +13,7 @@ has a lot of help and useful information built in.
     * [Initial Setup for Clubs](tutorials/Initial-Setup-for-Clubs.md)
     * [Using the Sqorz Information Screen](tutorials/Sqorz-Information-Screen.md)
     * [Live Streaming on Facebook](tutorials/Live-Streaming-on-Facebook.md)
+    * [Set Up Local Web Services (live results)](tutorials/Set-Up-Local-Web-Services-%28live-results%29.md)
 
 ???+ question "How Tos"
 
@@ -48,3 +49,5 @@ has a lot of help and useful information built in.
     * [APIs for Information and Results](reference/APIs-for-Information-and-Results.md)
     * [IP Address Fundamentals](discussion/IP-Address-Fundamentals.md)
     * [Correct Position of the Transponder on a BMX Bike](reference/Correct-Position-of-the-Transponder-on-a-BMX-Bike.md)
+    * [Generic Import File Formats in json](reference/Generic-Import-File-Formats-in-json.md)
+    * [Generic Race Import File (CSV)](reference/Generic-Race-Import-File-%28CSV%29.md)

@@ -1,0 +1,42 @@
+[
+    {
+        "familyName": "Smith",
+        "givenName": "Jane",
+        "birthDate": "2000-12-31",
+        "gender":  "FEMALE",
+        "plate": "123",
+        "transponders": [
+            {
+                "transponder": "AB-12345",
+                "classType": "20"
+            },
+            {
+                "transponder": "CD-67890",
+                "classType": "24"
+            }
+        ],
+        "nationalLicenseType": "AU",
+        "nationalLicenseClass": "OPEN",
+        "nationalLicenseNumber": "123456789",
+        "nationalLicenseExpiryDate": "2018-12-31",
+        "globalLicenseType": "UCI",
+        "globalLicenseClass": "OPEN",
+        "globalLicenseNumber": "1234567890",
+        "globalLicenseExpiryDate": "2018-12-31"
+    },
+    {
+        "familyName": "Smith",
+        "givenName": "John",
+        "birthDate": "2000-12-31",
+        "gender":  "MALE",
+        "plate": "123",
+        "nationalLicenseType": "AU",
+        "nationalLicenseClass": "OPEN",
+        "nationalLicenseNumber": "987654321",
+        "nationalLicenseExpiryDate": "2018-12-31",
+        "globalLicenseType": "UCI",
+        "globalLicenseClass": "OPEN",
+        "globalLicenseNumber": "9876543210",
+        "globalLicenseExpiryDate": "2018-12-31"
+    }
+]

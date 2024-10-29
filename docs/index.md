@@ -12,6 +12,7 @@ has a lot of help and useful information built in.
     
     * [Initial Setup for Clubs](tutorials/Initial-Setup-for-Clubs.md)
     * [Using the Sqorz Information Screen](tutorials/Sqorz-Information-Screen.md)
+    * [Live Streaming on Facebook](tutorials/Live-Streaming-on-Facebook.md)
 
 ???+ question "How Tos"
 
@@ -27,6 +28,11 @@ has a lot of help and useful information built in.
     * [Score](howtos/Score.md)
     * [USABMX: Setup Sqorz](howtos/USABMX:-Setup-Sqorz.md)
     * [Viewing the UCI Dataride Report.md](howtos/Viewing-the-UCI-Dataride-Report.md)
+    * [MYLAPS Timing System Check 3 mins](howtos/MYLAPS-Timing-System-Check-3-mins.md)
+    * [Self Managed Database](reference/Self-Managed-Database.md)
+    * [MYLAPS Transponder Activation](howtos/MYLAPS-Transponder-Activation.md)
+    * [How to Change the IP Address on a Decoder](howtos/How-to-Change-the-IP-Address-on-a-Decoder.md)
+    * [Obtaining the Log File from the Red Chip-X Decoder](howtos/Obtaining-the-Log-File-from-the-Red-Chip-X-Decoder.md)
 
 ???+ quote "Discussion"
     
@@ -39,3 +45,5 @@ has a lot of help and useful information built in.
     * [Cannot install USABMX API on new laptop (2502 error)](reference/Cannot-install-USABMX-API-on-new-laptop-%282502-error%29.md)
     * [ChipX Decoder Troubleshooting](reference/ChipX-Decoder-Troubleshooting.md)
     * [APIs for Information and Results](reference/APIs-for-Information-and-Results.md)
+    * [IP Address Fundamentals](discussion/IP-Address-Fundamentals.md)
+    * [Correct Position of the Transponder on a BMX Bike](reference/Correct-Position-of-the-Transponder-on-a-BMX-Bike.md)

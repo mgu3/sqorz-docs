@@ -1,4 +1,4 @@
-# Preamble
+## Preamble
 
 The Dataride report is produced after any UCI Championship event and uploaded 
 to the UCI Dataride website by the PCP (President of the Commissaires Panel).
@@ -7,7 +7,7 @@ Sqorz pulls the relevant information from the website and populates the report.
 
 Should the data in the event be clean / accurate the Commissaire will only have to upload the report
 
-# How to download the report
+## How to download the report
 
 - Finalise and close the event
 - Go to Events

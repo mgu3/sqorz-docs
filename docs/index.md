@@ -15,6 +15,7 @@ has a lot of help and useful information built in.
     * [Live Streaming on Facebook](tutorials/Live-Streaming-on-Facebook.md)
     * [Set Up Local Web Services (live results)](tutorials/Set-Up-Local-Web-Services-%28live-results%29.md)
     * [Setup Live Results via the Internet using NGROK](tutorials/Setup-Live-Results-via-the-Internet-using-NGROK.md)
+    * [Setting up Automatic Registration Using Checking Station or Timing Loop on the Track](tutorials/Setting-up-Automatic-Registration-Using-Checking-Station-or-Timing-Loop-on-the-Track.md)
 
 ???+ question "How Tos"
 

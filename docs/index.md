@@ -25,11 +25,17 @@ has a lot of help and useful information built in.
     * [Merge Classes](howtos/Merge-Classes.md)
     * [Draw and Print Moto Sheets](howtos/Draw-and-Print-Moto-Sheets.md)
     * [Score](howtos/Score.md)
+    * [USABMX: Setup Sqorz](howtos/USABMX:-Setup-Sqorz.md)
+    * [Viewing the UCI Dataride Report.md](howtos/Viewing-the-UCI-Dataride-Report.md)
 
 ???+ quote "Discussion"
     
-    * [Getting Started](tutorials/Initial-Setup-for-Clubs.md)
+    * [Member Database Subscription Feature](discussion/Member-Database-Subscription-Feature.md)
+    * [Member Database Options](discussion/Member-Database-Options.md)
 
 ???+ note "Reference"
     
     * [Search members and register new members at the track](reference/Search-members-and-register-new-members-at-the-track.md)
+    * [Cannot install USABMX API on new laptop (2502 error)](reference/Cannot-install-USABMX-API-on-new-laptop-%282502-error%29.md)
+    * [ChipX Decoder Troubleshooting](reference/ChipX-Decoder-Troubleshooting.md)
+    * [APIs for Information and Results](reference/APIs-for-Information-and-Results.md)

@@ -14,6 +14,7 @@ has a lot of help and useful information built in.
     * [Using the Sqorz Information Screen](tutorials/Sqorz-Information-Screen.md)
     * [Live Streaming on Facebook](tutorials/Live-Streaming-on-Facebook.md)
     * [Set Up Local Web Services (live results)](tutorials/Set-Up-Local-Web-Services-%28live-results%29.md)
+    * [Setup Live Results via the Internet using NGROK](tutorials/Setup-Live-Results-via-the-Internet-using-NGROK.md)
 
 ???+ question "How Tos"
 

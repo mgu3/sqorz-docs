@@ -15,7 +15,9 @@ has a lot of help and useful information built in.
     * [Live Streaming on Facebook](tutorials/Live-Streaming-on-Facebook.md)
     * [Set Up Local Web Services (live results)](tutorials/Set-Up-Local-Web-Services-%28live-results%29.md)
     * [Setup Live Results via the Internet using NGROK](tutorials/Setup-Live-Results-via-the-Internet-using-NGROK.md)
-    * [Setting up Automatic Registration Using Checking Station or Timing Loop on the Track](tutorials/Setting-up-Automatic-Registration-Using-Checking-Station-or-Timing-Loop-on-the-Track.md)
+    * [Setting Up Automatic Registration Using Checking Station or Timing Loop on the Track](tutorials/Setting-up-Automatic-Registration-Using-Checking-Station-or-Timing-Loop-on-the-Track.md)
+    * [Setting Up Training](tutorials/Setting-Up-Training.md)
+    * [Cabling a BMX Track for Transponders](tutorials/Cabling-a-BMX-Track-for-Transponders.md)
 
 ???+ question "How Tos"
 
@@ -36,7 +38,9 @@ has a lot of help and useful information built in.
     * [MYLAPS Transponder Activation](howtos/MYLAPS-Transponder-Activation.md)
     * [How to Change the IP Address on a Decoder](howtos/How-to-Change-the-IP-Address-on-a-Decoder.md)
     * [Obtaining the Log File from the Red Chip-X Decoder](howtos/Obtaining-the-Log-File-from-the-Red-Chip-X-Decoder.md)
-    * [How to Save Our Sqorz as a Homescreen Shortcut.md](howtos/How-to-Save-Our-Sqorz-as-a-Homescreen-Shortcut.md)
+    * [How to Save Our Sqorz as a Homescreen Shortcut](howtos/How-to-Save-Our-Sqorz-as-a-Homescreen-Shortcut.md)
+    * [Checking and Printing Results](howtos/Checking-and-Printing-Results.md)
+    * [Close (Upload) the Event](howtos/Close-%28Upload%29-the-Event.md)
 
 ???+ quote "Discussion"
     
@@ -53,3 +57,9 @@ has a lot of help and useful information built in.
     * [Correct Position of the Transponder on a BMX Bike](reference/Correct-Position-of-the-Transponder-on-a-BMX-Bike.md)
     * [Generic Import File Formats in json](reference/Generic-Import-File-Formats-in-json.md)
     * [Generic Race Import File (CSV)](reference/Generic-Race-Import-File-%28CSV%29.md)
+    * [Leaderboard Information](reference/Leaderboard-Information.md)
+    * [Start Pulse Boxes (Marty Baker Old Style)](reference/Start-Pulse-Boxes-%28Marty-Baker-Old-Style%29.md)
+
+??? note "Internal"
+
+    * [Managing the Documentation](reference/INTERNAL - Managing this Documentation.md)

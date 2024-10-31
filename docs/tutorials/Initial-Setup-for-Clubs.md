@@ -1,3 +1,10 @@
+---
+tags:
+  - HTML5
+  - JavaScript
+  - CSS
+---
+
 ![image info](../sqorz.png){ loading=lazy }
 
 There are a number of tasks that need to be completed in order to setup Sqorz for club use, 

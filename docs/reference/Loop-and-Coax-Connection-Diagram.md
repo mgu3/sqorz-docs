@@ -1,0 +1,1 @@
+![image](Loop-and-Coax-Connection-Diagram-assets/image1.png)

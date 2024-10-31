@@ -41,11 +41,15 @@ has a lot of help and useful information built in.
     * [How to Save Our Sqorz as a Homescreen Shortcut](howtos/How-to-Save-Our-Sqorz-as-a-Homescreen-Shortcut.md)
     * [Checking and Printing Results](howtos/Checking-and-Printing-Results.md)
     * [Close (Upload) the Event](howtos/Close-%28Upload%29-the-Event.md)
+    * [Renew and Activate Subscription on MYLAPS Transponders](howtos/Renew-and-Activate-Subscription-on-MYLAPS-Transponders.md)
+    * [Equipment Required to Run a BMX Race with Transponders](reference/Equipment-Required-to-Run-a-BMX-Race-with-Transponders.md)
+    * [Troubleshooting a Smart Decoder](howtos/Troubleshooting-a-Smart-Decoder.md)
 
 ???+ quote "Discussion"
     
     * [Member Database Subscription Feature](discussion/Member-Database-Subscription-Feature.md)
     * [Member Database Options](discussion/Member-Database-Options.md)
+    * [Planning a Standard BMX Timing System Installation USA Tracks](discussion/Planning-a-Standard-BMX-Timing-System-Installation-USA-Tracks.md)
 
 ???+ note "Reference"
     
@@ -59,6 +63,8 @@ has a lot of help and useful information built in.
     * [Generic Race Import File (CSV)](reference/Generic-Race-Import-File-%28CSV%29.md)
     * [Leaderboard Information](reference/Leaderboard-Information.md)
     * [Start Pulse Boxes (Marty Baker Old Style)](reference/Start-Pulse-Boxes-%28Marty-Baker-Old-Style%29.md)
+    * [Start Pulse Interface Box](reference/Start-Pulse-Interface-Box.md)
+    * [Loop and Coax Connection Diagram](reference/Loop-and-Coax-Connection-Diagram.md)
 
 ??? note "Internal"
 

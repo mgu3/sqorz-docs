@@ -1,3 +1,121 @@
 ## About
 
-The documentation for the Sqorz system is maintained in [Markdown](https://en.wikipedia.org/wiki/Markdown).
+The documentation for the Sqorz system is maintained in [Markdown](https://en.wikipedia.org/wiki/Markdown). Markdown is a very simple language
+that can be used to generate nice looking HTML for use as a static website for documentation.
+
+There are lots of references for Markdown, but we will also cover the basics that you need further down on
+this page.
+
+As well as Markdown we use [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/). This 
+is a Python wrapper for Markdown and gives us
+some nice styles and some useful add-ons such as support for tags.
+
+## Set Up
+
+In order to make changes to the documentation, you first need to set a few things up.
+
+### Python
+
+If you don't already have Python installed on your computer then you can install it 
+from [https://www.python.org/downloads/](https://www.python.org/downloads/).
+
+It is recommended, but not essential, that you use a virtual environment which separates the Python packages
+needed for the Sqorz documentation from any other Python activity on your computer.
+
+Open a command prompt (Terminal on a Mac or cmd on Windows).
+
+Check that Python is installed.
+
+```commandline
+
+python -V
+Python 3.8.16
+
+```
+
+Now create a new directory for your work:
+
+```commandline
+
+mkdir sqorz-docs
+cd sqorz-docs
+
+```
+
+The version of Python does not matter as long as it is Python 3.
+
+If you want to use a virtual environment, then also run:
+
+=== "Mac"
+
+    ```commandline
+    
+    python -m venv myenv
+    . ./myenv/bin/activate
+    
+    ```
+
+=== "Windows"
+
+    ```commandline
+    
+    python -m venv myenv
+    . .\myenv\bin\activate
+    
+    ```
+
+### Source Code
+
+!!!Move this Later
+    This should be moved to a new location.
+
+The documentation lives in Github. You can access it 
+at [https://github.com/mgu3/sqorz-docs](https://github.com/mgu3/sqorz-docs).
+
+```commandline
+mkdir docs
+cd docs
+git init
+git remote add origin https://github.com/mgu3/sqorz-docs
+git pull origin main
+
+```
+
+### Material for MkDocs
+
+```commandline
+
+pip install -r requirements.txt
+
+```
+
+### Local Web Server
+
+You can start a local web server to help you while editing the documentation:
+
+```commandline
+
+mkdocs serve
+
+```
+
+Now you can open a browser to view your documentation at [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
+
+### Changing Documentation
+
+The documentation is in text files so you can use any text editor to make changes. The changes will immediately
+be updated by the local web server (including any pages you already have open).
+
+### Publishing Documentation
+
+!!!Move Later
+
+    This should be moved to a proper location.
+
+You can publish the documentation:
+
+```commandline
+
+./publish
+
+```

@@ -1,9 +1,54 @@
 ## About
 
-The documentation for the Sqorz system is maintained in [Markdown](https://en.wikipedia.org/wiki/Markdown). Markdown is a very simple language
+The documentation for the Sqorz system is maintained in [Markdown](https://en.wikipedia.org/wiki/Markdown). 
+Markdown is a very simple language
 that can be used to generate nice looking HTML for use as a static website for documentation.
 
-There are lots of references for Markdown, but we will also cover the basics that you need further down on
+HTML is very powerful but can be fiddly to write. Using Markdown achieves the same output but allows
+you to focus on the content rather than the presentation.
+
+### Markdown Example
+
+=== "Markdown"
+
+    ```markdown
+    
+    ## Big News!
+    
+    - Easy to write
+    - Easy to maintain
+    
+    ![sqorz.png](../sqorz.png)
+    
+    ```
+
+=== "HTML"
+
+```html
+
+    <div class="tabbed-block">
+    <h2 id="big-news">Big News!</h2>
+    <ul>
+    <li>Easy to write</li>
+    <li>Easy to maintain</li>
+    </ul>
+    <p><a class="glightbox" href="../../sqorz.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="sqorz.png" src="../../sqorz.png"></a></p>
+    </div>
+
+```
+
+=== "Appearance"
+
+    ## Big News!
+    
+    - Easy to write
+      - Easy to maintain
+    
+    ![sqorz.png](../sqorz.png)
+
+There are lots of references for Markdown(e.g. 
+[https://www.markdownguide.org/cheat-sheet/](https://www.markdownguide.org/cheat-sheet/), 
+but we will also cover the basics that you need further down on
 this page.
 
 As well as Markdown we use [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/). This 

@@ -24,22 +24,22 @@ you to focus on the content rather than the presentation.
 
 === "HTML"
 
-```html
-
-    <div class="tabbed-block">
-    <h2 id="big-news">Big News!</h2>
-    <ul>
-    <li>Easy to write</li>
-    <li>Easy to maintain</li>
-    </ul>
-    <p><a class="glightbox" href="../../sqorz.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="sqorz.png" src="../../sqorz.png"></a></p>
-    </div>
-
-```
+    ```html
+    
+        <div class="tabbed-block">
+        <h2 id="big-news">Big News!</h2>
+        <ul>
+        <li>Easy to write</li>
+        <li>Easy to maintain</li>
+        </ul>
+        <p><a class="glightbox" href="../../sqorz.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="sqorz.png" src="../../sqorz.png"></a></p>
+        </div>
+    
+    ```
 
 === "Appearance"
 
-    ## Big News!
+    \## Big News!
     
     - Easy to write
       - Easy to maintain
@@ -164,3 +164,23 @@ You can publish the documentation:
 ./publish
 
 ```
+
+## Documentation Structure
+
+### General Approach
+
+We use the ??? approach of classifying documents into four categories:
+
+- Tutorials
+- How Tos
+- Discussion
+- Reference
+
+You will find the document structure has these as directory names.
+
+### Lower Level
+
+Each page consists of a single file in Markdown format which has the extension `.md`.
+
+Many pages also have images. These can be found in a directory in the same location
+as the Markdown file with the same name but with `-assets` on the end.

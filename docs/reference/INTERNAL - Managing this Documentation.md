@@ -1,3 +1,12 @@
+---
+tags:
+  - Incomplete
+  - Reports
+  - 3rd_Party
+  - Live
+  - Training
+  - Payments
+---
 ## About
 
 The documentation for the Sqorz system is maintained in [Markdown](https://en.wikipedia.org/wiki/Markdown). 
@@ -62,7 +71,8 @@ In order to make changes to the documentation, you first need to set a few thing
 ### Python
 
 If you don't already have Python installed on your computer then you can install it 
-from [https://www.python.org/downloads/](https://www.python.org/downloads/).
+from [https://www.python.org/downloads/](https://www.python.org/downloads/). Some things don't work well on earlier
+versions of Python. Python 3.12 was used to build this.
 
 It is recommended, but not essential, that you use a virtual environment which separates the Python packages
 needed for the Sqorz documentation from any other Python activity on your computer.
@@ -74,7 +84,7 @@ Check that Python is installed.
 ```commandline
 
 python -V
-Python 3.8.16
+Python 3.12.3
 
 ```
 
@@ -86,8 +96,6 @@ mkdir sqorz-docs
 cd sqorz-docs
 
 ```
-
-The version of Python does not matter as long as it is Python 3.
 
 If you want to use a virtual environment, then also run:
 

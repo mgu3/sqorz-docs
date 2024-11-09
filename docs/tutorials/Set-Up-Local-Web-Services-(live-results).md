@@ -1,3 +1,16 @@
+---
+tags:
+  - Payments
+---
+## What You Will Learn
+
+Once you complete this tutorial you will be able to show live results from your local web server.
+
+## Pre-requisites
+
+
+## Features
+
 Web Services is a set of features in Sqorz that can be access by other computers on the 
 same network by just using a web browser. The features include:
 
@@ -10,6 +23,8 @@ same network by just using a web browser. The features include:
 - Commentary information
 - Photo Finish
 - Training screen
+
+## Steps
 
 Open the event, go to Settings / Local Web Services and switch to On
 

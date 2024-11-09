@@ -1,4 +1,14 @@
-![image info](../sqorz.png){ loading=lazy }
+---
+tags:
+  - Payments
+---
+## What You Will Learn
+
+Once you complete this tutorial you will be able to configure the Sqorz information screen.
+
+## Pre-requisites
+
+You need to have completed the [Setting Up Your Club](Setting-Up-Your-Club.md) tutorial.
 
 ## Home Screen: News
 ![image](Sqorz-Information-Screen-assets/image1.webp){: style="width:500px"}

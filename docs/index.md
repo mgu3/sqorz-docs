@@ -8,9 +8,10 @@ Here you will find our system documentation arranged by category. You can
 also use the search bar above and don't forget that the Sqorz application
 has a lot of help and useful information built in.
 
+
 ???+ abstract "Tutorials"
     
-    * [Initial Setup for Clubs](tutorials/Initial-Setup-for-Clubs.md)
+    * [Setting Up Your Club](tutorials/Setting-Up-Your-Club.md)
     * [Using the Sqorz Information Screen](tutorials/Sqorz-Information-Screen.md)
     * [Live Streaming on Facebook](tutorials/Live-Streaming-on-Facebook.md)
     * [Set Up Local Web Services (live results)](tutorials/Set-Up-Local-Web-Services-%28live-results%29.md)

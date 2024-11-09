@@ -1,11 +1,21 @@
 ---
 tags:
-  - HTML5
-  - JavaScript
-  - CSS
+  - Incomplete
+  - Hardware
+  - Reports
 ---
 
-![image info](../sqorz.png){ loading=lazy }
+[//]: # (![image info]&#40;../sqorz.png&#41;{ loading=lazy })
+
+## What You Will Learn
+
+Once you complete this tutorial you will be able to set up a club to use Sqorz.
+
+## Pre-requisites
+
+There are no pre-requisites for this tutorial.
+
+## Steps
 
 There are a number of tasks that need to be completed in order to setup Sqorz for club use, 
 the tasks only need to be done once.

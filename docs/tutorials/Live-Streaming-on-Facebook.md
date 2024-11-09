@@ -1,6 +1,13 @@
-## Facebook Video Live Stream With Sqorz Results Feed Quick Guide 
+---
+tags:
+  - 3rd_Party
+  - Hardware
+---
+## What You Will Learn
 
-### Requirements 
+Once you complete this tutorial you will be able to live stream an event on Facebook.
+
+## Pre-requisites
 
 - Laptop Running OBS Studio.
 - Video Capture Card(s)
@@ -8,7 +15,7 @@
 - Web Access to Sqorz Results Feed.
 - Strong 4G Signal
 
-### Facebook Setup 
+## Facebook Setup 
 
 Facebook - click on Live (see below)  
 
@@ -21,7 +28,7 @@ Next click on Connect and copy the Persistent Stream Key (see below)
 Above – You can not press GoLive until Facebook detects the stream has started. 
 The next part of the guide details how to start streaming with OBS Studio to facebook.  
 
-### OBS Studio Setup 
+## OBS Studio Setup 
 
 Click on Settings button at the bottom right. 
 
@@ -94,7 +101,7 @@ Press Start Streaming in OBS Studio and then return to Facebook and press Go Liv
 ![image](Live-Streaming-on-Facebook-assets/image15.jpeg)
 ![image](Live-Streaming-on-Facebook-assets/image16.jpeg)
 
-### Additional Information
+## Additional Information
 
 Here is a great tutorial on optimising OBS settings for Facebook 
 

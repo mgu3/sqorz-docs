@@ -1,26 +1,52 @@
 # yaml-language-server: $schema=https://squidfunk.github.io/mkdocs-material/schema.json
 site_name: Sqorz Documentation
 site_url: https://mydomain.org
+
 theme:
+  palette:
+
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
   name: material
   logo: eventsoft.png
   features:
     - navigation.tabs
   icon:
     tag:
-      html: fontawesome/brands/html5
-      js: fontawesome/brands/js
-      css:  fontawesome/brands/css3
+      incomplete: fontawesome/solid/person-digging
+      hardware: simple/opensourcehardware
+      reports: material/receipt-text-edit
+      3rd_party: octicons/link-external-16
+      live: material/heart-multiple-outline
+      training: fontawesome/solid/person-running
+      payments: fontawesome/solid/credit-card
 extra:
   tags:
-    HTML5: html
-    JavaScript: js
-    CSS: css
+    Incomplete: incomplete
+    Hardware: hardware
+    Reports: reports
+    3rd_Party: 3rd_party
+    Live: live
+    Training: training
+    Payments: payments
 markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
   - attr_list
+  - pymdownx.emoji:
+        emoji_index: !!python/name:material.extensions.emoji.twemoji
+        emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - md_in_html
   - pymdownx.tabbed:
       alternate_style: true

@@ -1,3 +1,18 @@
+---
+tags:
+  - 3rd Party
+  - Hardware
+  - Incomplete
+---
+## What You Will Learn
+
+Once you complete this tutorial you will be able to set up the cabling on a BMX track to support
+transponders.
+
+## Pre-requisites
+
+You need to have completed the [Setting Up Your Club](Setting-Up-Your-Club.md) tutorial.
+
 ## Timing Positions
 
 In general the Transponder system uses 3 timing positions around the 

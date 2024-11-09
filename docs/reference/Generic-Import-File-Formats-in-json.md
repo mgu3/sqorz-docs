@@ -1,3 +1,7 @@
+---
+tags:
+  - Member Database
+---
 ## Overview
 
 Sqorz defines two generic file formats for importing event entries and member databases.

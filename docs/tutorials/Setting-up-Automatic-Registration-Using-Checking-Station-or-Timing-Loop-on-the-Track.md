@@ -1,3 +1,13 @@
+## What You Will Learn
+
+Once you complete this tutorial you will be able to set up automatic registration.
+
+## Pre-requisites
+
+You need to have completed the [Setting Up Your Club](Setting-Up-Your-Club.md) tutorial.
+
+## Steps 
+
 It is possible to use a checking station or a loop on the track as a method for 
 registering riders who are pre-entered for an event.
 

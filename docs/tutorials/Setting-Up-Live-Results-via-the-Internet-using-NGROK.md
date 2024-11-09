@@ -1,9 +1,21 @@
-## Preamble
+---
+tags:
+  - 3rd Party
+---
+## What You Will Learn
 
-Sqorz Local Web Services distributes live results to other computers / tablets via the 
+Once you complete this tutorial you will be able to publish results on the Internet.
+
+## Pre-requisites
+
+You need to have completed the [Setting Up Your Club](Setting-Up-Your-Club.md) tutorial.
+
+## Purpose
+
+Sqorz Local Web Services distributes live results to other computers/tablets via the 
 local network at the venue. However, this service does not distribute live results via the Internet.
 
-NGROK is an excellent third party utility that can be used for publishing live 
+[NGROK](https://ngrok.com/) is a third party utility that can be used for publishing live 
 Sqorz Web Service results via the Internet. There are free and paid plans, the 
 free plan is generally good enough for the distribution of Sqorz Web Services.
 

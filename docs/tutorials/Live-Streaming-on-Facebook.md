@@ -1,13 +1,16 @@
 ---
 tags:
-  - 3rd_Party
+  - 3rd Party
   - Hardware
+  - Live
 ---
 ## What You Will Learn
 
 Once you complete this tutorial you will be able to live stream an event on Facebook.
 
 ## Pre-requisites
+
+In order to complete this, you will need:
 
 - Laptop Running OBS Studio.
 - Video Capture Card(s)

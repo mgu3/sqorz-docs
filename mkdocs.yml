@@ -30,15 +30,17 @@ theme:
       live: material/heart-multiple-outline
       training: fontawesome/solid/person-running
       payments: fontawesome/solid/credit-card
+      member_database: material/database
 extra:
   tags:
     Incomplete: incomplete
     Hardware: hardware
     Reports: reports
-    3rd_Party: 3rd_party
+    3rd Party: 3rd_party
     Live: live
     Training: training
     Payments: payments
+    Member Database: member_database
 markdown_extensions:
   - admonition
   - pymdownx.details

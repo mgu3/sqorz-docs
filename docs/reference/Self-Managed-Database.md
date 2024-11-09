@@ -1,3 +1,7 @@
+---
+tags:
+  - Member Database
+---
 ## Attributes
 
 - The Self Managed member database has the following attributes

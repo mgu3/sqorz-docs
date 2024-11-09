@@ -1,12 +1,3 @@
----
-tags:
-  - Incomplete
-  - Reports
-  - 3rd_Party
-  - Live
-  - Training
-  - Payments
----
 ## About
 
 The documentation for the Sqorz system is maintained in [Markdown](https://en.wikipedia.org/wiki/Markdown). 

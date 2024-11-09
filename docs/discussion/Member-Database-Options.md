@@ -1,3 +1,8 @@
+---
+tags:
+  - Member Database
+---
+
 There are 3 options for member database administration:
 
 - Externally Managed

@@ -1,13 +1,10 @@
----
-tags:
-  - Payments
----
 ## What You Will Learn
 
 Once you complete this tutorial you will be able to show live results from your local web server.
 
 ## Pre-requisites
 
+You need to have completed the [Setting Up Your Club](Setting-Up-Your-Club.md) tutorial.
 
 ## Features
 
@@ -40,5 +37,6 @@ Then select the service you wish to display.
 
 ![image](Set-Up-Local-Web-Services-%28live-results%29-assets/image3.png)
 
-
+You now have live access to the data from a second computer on the network. You can
+repeat the last step on other computers if you wish.
 

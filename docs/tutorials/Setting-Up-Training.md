@@ -1,3 +1,18 @@
+---
+tags:
+  - Training
+  - Member Database
+---
+## What You Will Learn
+
+Once you complete this tutorial you will be able to live stream an event on Facebook.
+
+## Pre-requisites
+
+You need to have completed the [Setting Up Your Club](Setting-Up-Your-Club.md) tutorial.
+
+## Steps
+
 Setting up training can be done with a few simple steps. Once the training event has been set up for the first 
 time it can simply be duplicated for subsequent training events.
 
@@ -47,3 +62,5 @@ Switch on Local Web Services and enable Training checkbox to show results on a b
 Start Training / Close Event
 
 ![image](Setting-Up-Training-assets/image9.png){: style="width:800px"}
+
+You can now use your Sqorz system for training.

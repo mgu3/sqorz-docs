@@ -8,7 +8,6 @@ Here you will find our system documentation arranged by category. You can
 also use the search bar above and don't forget that the Sqorz application
 has a lot of help and useful information built in.
 
-
 ???+ abstract "Tutorials"
     
     * [Setting Up Your Club](tutorials/Setting-Up-Your-Club.md)

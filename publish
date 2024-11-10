@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# Build site
+mkdocs build
+
 # Remove old files
 aws s3 rm s3://sqorz-docs/ --recursive
 # copy files

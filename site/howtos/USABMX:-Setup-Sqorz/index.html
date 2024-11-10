@@ -1,0 +1,2131 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://mydomain.org/howtos/USABMX%3A-Setup-Sqorz/">
+      
+      
+        <link rel="prev" href="../Troubleshooting-a-Smart-Decoder/">
+      
+      
+        <link rel="next" href="../Viewing-the-UCI-Dataride-Report/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.44">
+    
+    
+      
+        <title>USABMX: Setup Sqorz - Sqorz Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.0253249f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+  
+  
+    
+    
+      
+    
+    
+  
+    
+    
+      
+    
+    
+  
+    
+    
+      
+    
+    
+  
+    
+    
+      
+    
+    
+  
+    
+    
+      
+    
+    
+  
+    
+    
+      
+    
+    
+  
+    
+    
+      
+    
+    
+  
+    
+    
+      
+    
+    
+  
+  
+  <style>.md-tag.md-tag--incomplete{--md-tag-icon:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M208 64a48 48 0 1 1 96 0 48 48 0 1 1-96 0M9.8 214.8c5.1-12.2 19.1-18 31.4-12.9l19.5 8.1 22.9-38.1C99.9 144.6 129.3 128 161 128c51.4 0 97 32.9 113.3 81.7l34.6 103.7 79.3 33.1 34.2-45.6c6.4-8.5 16.6-13.3 27.2-12.8s20.3 6.4 25.8 15.5l96 160c5.9 9.9 6.1 22.2.4 32.2S555.5 512 544 512H288c-11.1 0-21.4-5.7-27.2-15.2s-6.4-21.2-1.4-31.1l16-32c5.4-10.8 16.5-17.7 28.6-17.7h32l22.5-30L22.8 246.2c-12.2-5.1-18-19.1-12.9-31.4zm82.8 91.8 112 48c11.8 5 19.4 16.6 19.4 29.4v96c0 17.7-14.3 32-32 32s-32-14.3-32-32v-74.9l-60.6-26-37 111c-5.6 16.8-23.7 25.8-40.5 20.2s-25.8-23.7-20.3-40.4l48-144 11-33z"/></svg>');}.md-tag.md-tag--hardware{--md-tag-icon:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.87 11.525c.071.013.13.084.13.157v3.033a.166.166 0 0 1-.13.157l-2.875.535a.24.24 0 0 0-.17.151l-.898 2.242a.25.25 0 0 0 .017.229l1.633 2.379a.17.17 0 0 1-.02.204l-2.144 2.144a.17.17 0 0 1-.203.019l-2.338-1.604a.23.23 0 0 0-.224-.008l-1.03.55a.12.12 0 0 1-.17-.062l-2.125-5.135a.16.16 0 0 1 .062-.192l.258-.158c.048-.03.113-.08.163-.125a3.354 3.354 0 1 0-3.612 0c.05.046.115.096.163.125l.258.158a.16.16 0 0 1 .062.192L8.552 21.65a.12.12 0 0 1-.17.063l-1.03-.55a.23.23 0 0 0-.224.007L4.79 22.775a.17.17 0 0 1-.204-.019l-2.145-2.144a.17.17 0 0 1-.019-.204l1.633-2.38a.25.25 0 0 0 .017-.228l-.897-2.242a.24.24 0 0 0-.17-.15L.13 14.871a.166.166 0 0 1-.13-.157v-3.032c0-.073.059-.144.13-.157l2.947-.548a.25.25 0 0 0 .175-.15l.903-2.108a.25.25 0 0 0-.014-.227L2.424 5.989a.17.17 0 0 1 .019-.203L4.587 3.64a.166.166 0 0 1 .204-.019L7.337 5.37c.06.041.163.048.229.016l2.043-.836c.07-.023.137-.1.15-.173l.567-3.047a.17.17 0 0 1 .157-.131h3.034c.073 0 .143.059.157.13l.567 3.048a.25.25 0 0 0 .15.173l2.043.836a.25.25 0 0 0 .23-.016l2.546-1.748a.166.166 0 0 1 .203.02l2.144 2.144c.052.051.06.143.02.203l-1.718 2.503a.25.25 0 0 0-.014.227l.903 2.108a.26.26 0 0 0 .175.15z"/></svg>');}.md-tag.md-tag--reports{--md-tag-icon:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m3 22 1.5-1.5L6 22l1.5-1.5L9 22l1.5-1.5v-.87L13.13 17H6v-2h9.13l2-2H6v-2h12v1.13l3-3V2l-1.5 1.5L18 2l-1.5 1.5L15 2l-1.5 1.5L12 2l-1.5 1.5L9 2 7.5 3.5 6 2 4.5 3.5 3 2zM6 9V7h12v2zm7 13v-2.04l6.13-6.13 2.04 2.04L15.04 22zm8-9.97a.5.5 0 0 1 .53.12l1.32 1.32c.2.2.2.53 0 .72l-.98.98-2.04-2.04.98-.98.02-.02c.05-.04.11-.08.17-.1"/></svg>');}.md-tag.md-tag--3rd_party{--md-tag-icon:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M3.75 2h3.5a.75.75 0 0 1 0 1.5h-3.5a.25.25 0 0 0-.25.25v8.5c0 .138.112.25.25.25h8.5a.25.25 0 0 0 .25-.25v-3.5a.75.75 0 0 1 1.5 0v3.5A1.75 1.75 0 0 1 12.25 14h-8.5A1.75 1.75 0 0 1 2 12.25v-8.5C2 2.784 2.784 2 3.75 2m6.854-1h4.146a.25.25 0 0 1 .25.25v4.146a.25.25 0 0 1-.427.177L13.03 4.03 9.28 7.78a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042l3.75-3.75-1.543-1.543A.25.25 0 0 1 10.604 1"/></svg>');}.md-tag.md-tag--live{--md-tag-icon:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12 21.1-1.5 1.3c-6.6-5.9-10-9-10-12.8 0-1.2.4-2.3 1-3.2V7c0 4.7 3.9 8.2 10.5 14.1m1.6-4.1c4.7-4.3 7.9-7.1 8-10 0-2-1.5-3.5-3.5-3.5-1.6 0-3.1 1-3.6 2.4h-1.9C12 4.5 10.5 3.5 9 3.5 7 3.5 5.5 5 5.5 7c0 2.9 3.1 5.7 7.9 10l.1.1M18 1.5c3.1 0 5.5 2.4 5.5 5.5 0 3.7-3.4 6.8-10 12.8-6.6-5.9-10-9-10-12.8 0-3.1 2.4-5.5 5.5-5.5 1.7 0 3.4.8 4.5 2.1 1.1-1.3 2.8-2.1 4.5-2.1"/></svg>');}.md-tag.md-tag--training{--md-tag-icon:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M320 48a48 48 0 1 0-96 0 48 48 0 1 0 96 0M125.7 175.5c9.9-9.9 23.4-15.5 37.5-15.5 1.9 0 3.8.1 5.6.3L137.6 254c-9.3 28 1.7 58.8 26.8 74.5l86.2 53.9-25.4 88.8c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l28.7-100.4c5.9-20.6-2.6-42.6-20.7-53.9L238 299l30.9-82.4 5.1 12.3c15 35.8 49.9 59.1 88.7 59.1H384c17.7 0 32-14.3 32-32s-14.3-32-32-32h-21.3c-12.9 0-24.6-7.8-29.5-19.7l-6.3-15c-14.6-35.1-44.1-61.9-80.5-73.1l-48.7-15C186.6 97.8 175 96 163.3 96c-31 0-60.8 12.3-82.7 34.3l-23.2 23.1c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l23.1-23.1zM91.2 352H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h69.6c19 0 36.2-11.2 43.9-28.5l11.5-25.9-9.5-6a95.4 95.4 0 0 1-37.9-44.9z"/></svg>');}.md-tag.md-tag--payments{--md-tag-icon:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96v32h576V96c0-35.3-28.7-64-64-64zm512 192H0v192c0 35.3 28.7 64 64 64h448c35.3 0 64-28.7 64-64zM112 352h64c8.8 0 16 7.2 16 16s-7.2 16-16 16h-64c-8.8 0-16-7.2-16-16s7.2-16 16-16m112 16c0-8.8 7.2-16 16-16h128c8.8 0 16 7.2 16 16s-7.2 16-16 16H240c-8.8 0-16-7.2-16-16"/></svg>');}.md-tag.md-tag--member_database{--md-tag-icon:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3C7.58 3 4 4.79 4 7s3.58 4 8 4 8-1.79 8-4-3.58-4-8-4M4 9v3c0 2.21 3.58 4 8 4s8-1.79 8-4V9c0 2.21-3.58 4-8 4s-8-1.79-8-4m0 5v3c0 2.21 3.58 4 8 4s8-1.79 8-4v-3c0 2.21-3.58 4-8 4s-8-1.79-8-4"/></svg>');}</style>
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#setup-api-connection-sqorz-is-on-the-same-computer-as-race-manager" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Sqorz Documentation" class="md-header__button md-logo" aria-label="Sqorz Documentation" data-md-component="logo">
+      
+  <img src="../../eventsoft.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Sqorz Documentation
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              USABMX: Setup Sqorz
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../tags/" class="md-tabs__link">
+        
+  
+    
+  
+  Tags
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../discussion/IP-Address-Fundamentals/" class="md-tabs__link">
+          
+  
+  Discussion
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../Auto-Allocate-%28Rental%29-Transponders-to-Competitors/" class="md-tabs__link">
+          
+  
+  Howtos
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../reference/APIs-for-Information-and-Results/" class="md-tabs__link">
+          
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../tutorials/Cabling-a-BMX-Track-for-Transponders/" class="md-tabs__link">
+          
+  
+  Tutorials
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Sqorz Documentation" class="md-nav__button md-logo" aria-label="Sqorz Documentation" data-md-component="logo">
+      
+  <img src="../../eventsoft.png" alt="logo">
+
+    </a>
+    Sqorz Documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tags/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tags
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Discussion
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Discussion
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../discussion/IP-Address-Fundamentals/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    IP Address Fundamentals
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../discussion/Member-Database-Options/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Member Database Options
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../discussion/Member-Database-Subscription-Feature/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Member Database Subscription Feature
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../discussion/Planning-a-Standard-BMX-Timing-System-Installation-USA-Tracks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Planning a Standard BMX Timing System Installation USA Tracks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Howtos
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Howtos
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Auto-Allocate-%28Rental%29-Transponders-to-Competitors/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Auto Allocate (Rental) Transponders to Competitors
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Auto-Create-Transponder-Inventory/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Auto Create Transponder Inventory
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Checking-and-Printing-Results/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Checking and Printing Results
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Close-%28Upload%29-the-Event/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Close (Upload) the Event
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Create-new-event-using-your-club-race-format/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Create new event using your club race format
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Draw-and-Print-Moto-Sheets/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Draw and Print Moto Sheets
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Emergency-Contacts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Emergency Contacts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../How-to-Change-the-IP-Address-on-a-Decoder/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to Change the IP Address on a Decoder
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../How-to-Save-Our-Sqorz-as-a-Homescreen-Shortcut/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    How to Save Our Sqorz as a Homescreen Shortcut
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Import-Member-Database/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Import Member Database
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MYLAPS-Timing-System-Check-3-mins/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MYLAPS Timing System Check 3 mins
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../MYLAPS-Transponder-Activation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    MYLAPS Transponder Activation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Merge-Classes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Merge Classes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Obtaining-the-Log-File-from-the-Red-Chip-X-Decoder/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Obtaining the Log File from the Red Chip X Decoder
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Register-Competitors-at-the-Track/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Register Competitors at the Track
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Renew-and-Activate-Subscription-on-MYLAPS-Transponders/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Renew and Activate Subscription on MYLAPS Transponders
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Report/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Report
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Score/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Score
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Set-the-Race-Order/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Set the Race Order
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Setup-Decoders/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setup Decoders
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Setup-Your-Club-Race-Format/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setup Your Club Race Format
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Troubleshooting-a-Smart-Decoder/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Troubleshooting a Smart Decoder
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    USABMX: Setup Sqorz
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    USABMX: Setup Sqorz
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#setup-api-connection-sqorz-is-on-the-same-computer-as-race-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setup API Connection (Sqorz is on the same computer as Race Manager)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup-api-connection-sqorz-is-on-a-different-computer-from-race-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setup API Connection (Sqorz is on a different computer from Race Manager)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Setup API Connection (Sqorz is on a different computer from Race Manager)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#to-obtain-hostname-of-the-race-manager-computer" class="md-nav__link">
+    <span class="md-ellipsis">
+      To obtain Hostname of the Race Manager Computer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#to-obtain-ip-address-of-the-race-manager-computer" class="md-nav__link">
+    <span class="md-ellipsis">
+      To obtain IP Address of the Race Manager Computer
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Viewing-the-UCI-Dataride-Report/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Viewing the UCI Dataride Report
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_25" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_25" id="__nav_4_25_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Score
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_25_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_25">
+            <span class="md-nav__icon md-icon"></span>
+            Score
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Score/13.1.0.%20Successful-Scoring-with-Transponders/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    13.1.0. Successful Scoring with Transponders
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Score/13.2.0.-Auto.-Score-the-Event/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    13.2.0. Auto. Score the Event
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Score/13.4.%20Scoring-Window-and-Data-Window-Side-by-Side/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    13.4. Scoring Window and Data Window Side by Side
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Score/13.5.-Use-Get-Times-to-Fix-Issues-with-Timing-Data/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    13.5. Use Get Times to Fix Issues with Timing Data
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Score/13.6.-Timing-Loop-Failure-During-a-Race-Event/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    13.6. Timing Loop Failure During a Race Event
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Score/13.7%20Automatic-Scoring-Progress/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    13.7 Automatic Scoring Progress
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Score/Score-the-Event/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Score the Event
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Reference
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/APIs-for-Information-and-Results/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    APIs for Information and Results
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/Cannot-install-USABMX-API-on-new-laptop-%282502-error%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cannot install USABMX API on new laptop (2502 error)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/ChipX-Decoder-Troubleshooting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ChipX Decoder Troubleshooting
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/Correct-Position-of-the-Transponder-on-a-BMX-Bike/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Correct Position of the Transponder on a BMX Bike
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/Equipment-Required-to-Run-a-BMX-Race-with-Transponders/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Equipment Required to Run a BMX Race with Transponders
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/Generic-Import-File-Formats-in-json/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Generic Import File Formats in json
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/Generic-Race-Import-File-%28CSV%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Generic Race Import File (CSV)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/INTERNAL%20-%20Managing%20this%20Documentation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    INTERNAL   Managing this Documentation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/Leaderboard-Information/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Leaderboard Information
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/Loop-and-Coax-Connection-Diagram/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Loop and Coax Connection Diagram
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/Search-members-and-register-new-members-at-the-track/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Search members and register new members at the track
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/Self-Managed-Database/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Self Managed Database
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/Start-Pulse-Boxes-%28Marty-Baker-Old-Style%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Start Pulse Boxes (Marty Baker Old Style)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/Start-Pulse-Interface-Box/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Start Pulse Interface Box
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Tutorials
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Tutorials
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/Cabling-a-BMX-Track-for-Transponders/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cabling a BMX Track for Transponders
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/Live-Streaming-on-Facebook/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Live Streaming on Facebook
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/Setting-Up-Live-Results-via-the-Internet-using-NGROK/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setting Up Live Results via the Internet using NGROK
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/Setting-Up-Local-Web-Services-%28live-results%29/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setting Up Local Web Services (live results)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/Setting-Up-Training/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setting Up Training
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/Setting-Up-Your-Club/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setting Up Your Club
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/Setting-up-Automatic-Registration-Using-Checking-Station-or-Timing-Loop-on-the-Track/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setting up Automatic Registration Using Checking Station or Timing Loop on the Track
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/Sqorz-Information-Screen/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Sqorz Information Screen
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#setup-api-connection-sqorz-is-on-the-same-computer-as-race-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setup API Connection (Sqorz is on the same computer as Race Manager)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#setup-api-connection-sqorz-is-on-a-different-computer-from-race-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setup API Connection (Sqorz is on a different computer from Race Manager)
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Setup API Connection (Sqorz is on a different computer from Race Manager)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#to-obtain-hostname-of-the-race-manager-computer" class="md-nav__link">
+    <span class="md-ellipsis">
+      To obtain Hostname of the Race Manager Computer
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#to-obtain-ip-address-of-the-race-manager-computer" class="md-nav__link">
+    <span class="md-ellipsis">
+      To obtain IP Address of the Race Manager Computer
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  <h1>USABMX: Setup Sqorz</h1>
+
+<p><a class="glightbox" href="../USABMX-Setup-Sqorz-assets/image1.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image" src="../USABMX-Setup-Sqorz-assets/image1.png" style="width:500px" /></a></p>
+<p>Sqorz needs to connect to Race Manager in order to retrieve a list of riders for timing.</p>
+<p>On the settings screen USABMX Race Manager Sync needs to be On</p>
+<h2 id="setup-api-connection-sqorz-is-on-the-same-computer-as-race-manager">Setup API Connection (Sqorz is on the same computer as Race Manager)</h2>
+<p>If Sqorz is running on the same computer as Race Manager the URL needs to be as shown below</p>
+<p><a class="glightbox" href="../USABMX-Setup-Sqorz-assets/image2.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image" src="../USABMX-Setup-Sqorz-assets/image2.png" style="width:500px" /></a></p>
+<p>Click the Refresh button and you should see a green check mark and the number 200</p>
+<p><a class="glightbox" href="../USABMX-Setup-Sqorz-assets/image3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image" src="../USABMX-Setup-Sqorz-assets/image3.png" style="width:500px" /></a></p>
+<p>Then click on the drop down list and select the race</p>
+<p><a class="glightbox" href="../USABMX-Setup-Sqorz-assets/image4.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image" src="../USABMX-Setup-Sqorz-assets/image4.png" style="width:500px" /></a></p>
+<h2 id="setup-api-connection-sqorz-is-on-a-different-computer-from-race-manager">Setup API Connection (Sqorz is on a different computer from Race Manager)</h2>
+<p>If Sqorz is running on a different computer from Race Manager the URL will need to point to the Race Manager computer. The Sqorz computer and the Race manager computer must be on the same network.</p>
+<p>There are 2 ways to do this:</p>
+<ol>
+<li>Using the Hostname of the Race Manager computer (preferred method)</li>
+<li>Using the IP Address of the Race Manager computer</li>
+</ol>
+<h3 id="to-obtain-hostname-of-the-race-manager-computer">To obtain Hostname of the Race Manager Computer</h3>
+<p>Open a <em>Command Prompt (CMD)</em> in Windows: </p>
+<ul>
+<li>Open the Start menu or press the Windows key + R. </li>
+<li>Type cmd or cmd.exe in the Run command box. </li>
+<li>Press Enter.</li>
+</ul>
+<p>A black Command Prompt box will appear</p>
+<p>Type “hostname” in the Command Prompt box and press Enter</p>
+<p>The hostname of the computer will appear</p>
+<p>Copy the hostname</p>
+<p>In the URL replace the words “localhost” with the hostname obtained from the Command Prompt screen</p>
+<p><a class="glightbox" href="../USABMX-Setup-Sqorz-assets/image5.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image" src="../USABMX-Setup-Sqorz-assets/image5.png" style="width:500px" /></a></p>
+<p>Click <strong>Refresh</strong> and select the event from the dropdown list</p>
+<h2 id="to-obtain-ip-address-of-the-race-manager-computer">To obtain IP Address of the Race Manager Computer</h2>
+<p>Open a Command Prompt (CMD) in Windows: </p>
+<ul>
+<li>Open the Start menu or press the Windows key + R. </li>
+<li>Type cmd or cmd.exe in the Run command box. </li>
+<li>Press Enter.</li>
+</ul>
+<p>A black Command Prompt box will appear</p>
+<p>Type “ipconfig” in the Command Prompt box and press Enter</p>
+<p>The network details of the computer will appear</p>
+<p>Find the hostname</p>
+<p>In the URL replace the words “localhost” with the IP Address obtained from the Command Prompt screen</p>
+<p><a class="glightbox" href="../USABMX-Setup-Sqorz-assets/image6.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image" src="../USABMX-Setup-Sqorz-assets/image6.png" style="width:500px" /></a></p>
+<p>Click <strong>Refresh</strong> and select the event from the dropdown list</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "tags": {"3rd Party": "3rd_party", "Hardware": "hardware", "Incomplete": "incomplete", "Live": "live", "Member Database": "member_database", "Payments": "payments", "Reports": "reports", "Training": "training"}, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

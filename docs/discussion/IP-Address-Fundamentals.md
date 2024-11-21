@@ -18,8 +18,8 @@ Understanding a few IP address fundamentals can help troubleshoot when an issue 
 - Devices can only communicate with each other on a network if they have similar IP addresses
 - IP addresses must be unique, no 2 devices can have the same IP address
 - Computers can have 2 IP addresses
-  # One for the Ethernet connection
-  # One for the wifi connection
+    * One for the Ethernet connection
+    * One for the wifi connection
 
 ## How does a device obtain an IP address
 
@@ -56,7 +56,7 @@ Understanding a few IP address fundamentals can help troubleshoot when an issue 
 - Press the right hand button on the front of the decoder
 - Read the IP address from the screen
 
-![image](IP-Address-Fundamentals-assets/image1.png)
+![Decoder](IP-Address-Fundamentals-assets/image1.png)
 
 ## Troubleshooting
 

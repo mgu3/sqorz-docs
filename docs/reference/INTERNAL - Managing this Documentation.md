@@ -1,3 +1,7 @@
+!!!Move this out of the documentation
+
+    This should be put somewhere else.
+
 ## About
 
 The documentation for the Sqorz system is maintained in [Markdown](https://en.wikipedia.org/wiki/Markdown). 

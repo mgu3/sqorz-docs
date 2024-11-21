@@ -50,6 +50,7 @@ has a lot of help and useful information built in.
     * [Member Database Subscription Feature](discussion/Member-Database-Subscription-Feature.md)
     * [Member Database Options](discussion/Member-Database-Options.md)
     * [Planning a Standard BMX Timing System Installation USA Tracks](discussion/Planning-a-Standard-BMX-Timing-System-Installation-USA-Tracks.md)
+    * [IP Address Fundamental](discussion/IP-Address-Fundamentals.md)
 
 ???+ note "Reference"
     

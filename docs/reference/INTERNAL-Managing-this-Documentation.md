@@ -1,6 +1,6 @@
 !!!Move this out of the documentation
 
-    This should be put somewhere else.
+    This file is not included in the index.
 
 ## About
 
@@ -114,10 +114,13 @@ If you want to use a virtual environment, then also run:
 
 ### Source Code
 
-!!!Move this Later
-    This should be moved to a new location.
+!!!Initial Set Up Only
+    This step is only required the first time the documentation is moved.
 
-The documentation lives in Github. You can access it 
+    If you are setting this up subsequently, then get the files from wherever they
+    are stored, the version on GitHib will be out of date.
+
+The initial documentation lives in Github. You can access it 
 at [https://github.com/mgu3/sqorz-docs](https://github.com/mgu3/sqorz-docs).
 
 ```commandline
@@ -129,7 +132,17 @@ git pull origin main
 
 ```
 
+You don't need to use git, so you can now remove its files that handle versioning etc.
+
+```commandline
+rm -rf .git
+```
+
 ### Material for MkDocs
+
+We use some Python packages which are listed in the file `requirements.txt`. You don't need
+to add these manually, you can use `pip` to install all of them at one by telling it the
+name of the file.
 
 ```commandline
 
@@ -154,25 +167,27 @@ Now you can open a browser to view your documentation at [http://127.0.0.1:8000/
 The documentation is in text files so you can use any text editor to make changes. The changes will immediately
 be updated by the local web server (including any pages you already have open).
 
+The examples here assume you are using VS Code, but you can use anything you prefer.
+
 ### Publishing Documentation
 
-!!!Move Later
+!!!NOTE
 
-    This should be moved to a proper location.
+    **To Be Completed**
 
-You can publish the documentation:
+    Damian will find a suitable location for the documentation and provide
+    instructions on how to publish it.
 
-```commandline
+    The `site` directory is the part that needs to be published. Prior to 
+    publishing it, you need to run `mkdocs build` to update this directory.
 
-./publish
-
-```
 
 ## Documentation Structure
 
 ### General Approach
 
-We use the ??? approach of classifying documents into four categories:
+We use the [Diataxis](https://docs.divio.com/documentation-system/) 
+approach of classifying documents into four categories:
 
 - Tutorials
 - How Tos
@@ -187,3 +202,29 @@ Each page consists of a single file in Markdown format which has the extension `
 
 Many pages also have images. These can be found in a directory in the same location
 as the Markdown file with the same name but with `-assets` on the end.
+
+## Markdown Basics
+
+Markdown is pretty easy, if you want to do anything complicated you can Google it.
+
+| Format          | Markdown                                               |
+|-----------------|--------------------------------------------------------|
+| Heading         | `# H1`<br>`## H2`<br>`### H3`                          |
+| Bold	           | `**bold text**`                                        |
+| Italic	         | `*italicized text*`                                    |
+| Blockquote	     | `> blockquote`                                         |
+| Ordered List	   | `1. First item`<br>`2. Second item`<br>`3. Third item` |
+| Unordered List	 | `- First item`<br> `- Second item`<br> `- Third item`  |
+|Code	| \``code`\`                                              |
+|Link	| `[title](https://www.example.com)`                     |
+|Image	| `![alt text](image.jpg)`                               |
+
+If you want to do something more complicated then you can usually just include raw HTML
+syntax in with your Markdown codes. For an example, look at the code for the table above,
+this will also show how to do tables which a quite easy.
+
+## Example - Creating a New Page
+
+In this example we will use VS Code running on a Mac to create a new documentation
+page with pictures and tags.
+

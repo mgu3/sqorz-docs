@@ -66,7 +66,3 @@ has a lot of help and useful information built in.
     * [Start Pulse Boxes (Marty Baker Old Style)](reference/Start-Pulse-Boxes-%28Marty-Baker-Old-Style%29.md)
     * [Start Pulse Interface Box](reference/Start-Pulse-Interface-Box.md)
     * [Loop and Coax Connection Diagram](reference/Loop-and-Coax-Connection-Diagram.md)
-
-??? note "Internal"
-
-    * [Managing the Documentation](reference/INTERNAL - Managing this Documentation.md)

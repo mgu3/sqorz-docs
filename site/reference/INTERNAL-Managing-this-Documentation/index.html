@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://mydomain.org/reference/INTERNAL%20-%20Managing%20this%20Documentation/">
+        <link rel="canonical" href="https://mydomain.org/reference/INTERNAL-Managing-this-Documentation/">
       
       
         <link rel="prev" href="../Generic-Race-Import-File-%28CSV%29/">
@@ -169,7 +169,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              INTERNAL   Managing this Documentation
+              INTERNAL Managing this Documentation
             
           </span>
         </div>
@@ -1518,7 +1518,7 @@
           
   
   <span class="md-ellipsis">
-    INTERNAL   Managing this Documentation
+    INTERNAL Managing this Documentation
   </span>
   
 
@@ -1529,7 +1529,7 @@
         
   
   <span class="md-ellipsis">
-    INTERNAL   Managing this Documentation
+    INTERNAL Managing this Documentation
   </span>
   
 
@@ -1671,6 +1671,24 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#markdown-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Markdown Basics
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-creating-a-new-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example - Creating a New Page
+    </span>
+  </a>
   
 </li>
       
@@ -2179,6 +2197,24 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#markdown-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      Markdown Basics
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-creating-a-new-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example - Creating a New Page
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2194,11 +2230,11 @@
                   
 
 
-  <h1>INTERNAL   Managing this Documentation</h1>
+  <h1>INTERNAL Managing this Documentation</h1>
 
 <div class="admonition move this out of the documentation">
 <p class="admonition-title">Move</p>
-<p>This should be put somewhere else.</p>
+<p>This file is not included in the index.</p>
 </div>
 <h2 id="about">About</h2>
 <p>The documentation for the Sqorz system is maintained in <a href="https://en.wikipedia.org/wiki/Markdown">Markdown</a>. 
@@ -2279,11 +2315,13 @@ cd sqorz-docs
 </div>
 </div>
 <h3 id="source-code">Source Code</h3>
-<div class="admonition move this later">
-<p class="admonition-title">Move</p>
-<p>This should be moved to a new location.</p>
+<div class="admonition initial set up only">
+<p class="admonition-title">Initial</p>
+<p>This step is only required the first time the documentation is moved.</p>
+<p>If you are setting this up subsequently, then get the files from wherever they
+are stored, the version on GitHib will be out of date.</p>
 </div>
-<p>The documentation lives in Github. You can access it 
+<p>The initial documentation lives in Github. You can access it 
 at <a href="https://github.com/mgu3/sqorz-docs">https://github.com/mgu3/sqorz-docs</a>.</p>
 <div class="highlight"><pre><span></span><code>mkdir docs
 cd docs
@@ -2291,7 +2329,13 @@ git init
 git remote add origin https://github.com/mgu3/sqorz-docs
 git pull origin main
 </code></pre></div>
+<p>You don't need to use git, so you can now remove its files that handle versioning etc.</p>
+<div class="highlight"><pre><span></span><code>rm -rf .git
+</code></pre></div>
 <h3 id="material-for-mkdocs">Material for MkDocs</h3>
+<p>We use some Python packages which are listed in the file <code>requirements.txt</code>. You don't need
+to add these manually, you can use <code>pip</code> to install all of them at one by telling it the
+name of the file.</p>
 <div class="highlight"><pre><span></span><code>pip install -r requirements.txt
 </code></pre></div>
 <h3 id="local-web-server">Local Web Server</h3>
@@ -2302,17 +2346,20 @@ git pull origin main
 <h3 id="changing-documentation">Changing Documentation</h3>
 <p>The documentation is in text files so you can use any text editor to make changes. The changes will immediately
 be updated by the local web server (including any pages you already have open).</p>
+<p>The examples here assume you are using VS Code, but you can use anything you prefer.</p>
 <h3 id="publishing-documentation">Publishing Documentation</h3>
-<div class="admonition move later">
-<p class="admonition-title">Move</p>
-<p>This should be moved to a proper location.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>To Be Completed</strong></p>
+<p>Damian will find a suitable location for the documentation and provide
+instructions on how to publish it.</p>
+<p>The <code>site</code> directory is the part that needs to be published. Prior to 
+publishing it, you need to run <code>mkdocs build</code> to update this directory.</p>
 </div>
-<p>You can publish the documentation:</p>
-<div class="highlight"><pre><span></span><code>./publish
-</code></pre></div>
 <h2 id="documentation-structure">Documentation Structure</h2>
 <h3 id="general-approach">General Approach</h3>
-<p>We use the ??? approach of classifying documents into four categories:</p>
+<p>We use the <a href="https://docs.divio.com/documentation-system/">Diataxis</a> 
+approach of classifying documents into four categories:</p>
 <ul>
 <li>Tutorials</li>
 <li>How Tos</li>
@@ -2324,6 +2371,90 @@ be updated by the local web server (including any pages you already have open).<
 <p>Each page consists of a single file in Markdown format which has the extension <code>.md</code>.</p>
 <p>Many pages also have images. These can be found in a directory in the same location
 as the Markdown file with the same name but with <code>-assets</code> on the end.</p>
+<h2 id="markdown-basics">Markdown Basics</h2>
+<p>Markdown is pretty easy, if you want to do anything complicated you can Google it.</p>
+<table>
+<thead>
+<tr>
+<th>Format</th>
+<th>Markdown</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Heading</td>
+<td><code># H1</code><br><code>## H2</code><br><code>### H3</code></td>
+</tr>
+<tr>
+<td>Bold</td>
+<td><code>**bold text**</code></td>
+</tr>
+<tr>
+<td>Italic</td>
+<td><code>*italicized text*</code></td>
+</tr>
+<tr>
+<td>Blockquote</td>
+<td><code>&gt; blockquote</code></td>
+</tr>
+<tr>
+<td>Ordered List</td>
+<td><code>1. First item</code><br><code>2. Second item</code><br><code>3. Third item</code></td>
+</tr>
+<tr>
+<td>Unordered List</td>
+<td><code>- First item</code><br> <code>- Second item</code><br> <code>- Third item</code></td>
+</tr>
+<tr>
+<td>Code</td>
+<td>`<code>code</code>`</td>
+</tr>
+<tr>
+<td>Link</td>
+<td><code>[title](https://www.example.com)</code></td>
+</tr>
+<tr>
+<td>Image</td>
+<td><code>![alt text](image.jpg)</code></td>
+</tr>
+</tbody>
+</table>
+<p>If you want to do something more complicated then you can usually just include raw HTML
+syntax in with your Markdown codes. For an example, look at the code for the table above,
+this will also show how to do tables which a quite easy.</p>
+<h2 id="example-creating-a-new-page">Example - Creating a New Page</h2>
+<p>In this example we will use VS Code running on a Mac to create a new documentation
+page with pictures and tags.</p>
+<p>Start by creating a new file. In VS Code Ctrl-Click on the discussions directory and select <strong>New File...</strong>:</p>
+<p><a class="glightbox" href="../INTERNAL-Managing-this-Documentation-assets/image3.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image3.png" src="../INTERNAL-Managing-this-Documentation-assets/image3.png" style="width:500px" /></a></p>
+<p>Lets call it Example-1.md</p>
+<p><a class="glightbox" href="../INTERNAL-Managing-this-Documentation-assets/image4.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image4.png" src="../INTERNAL-Managing-this-Documentation-assets/image4.png" style="width:500px" /></a></p>
+<p>Enter some text into the file:</p>
+<p><a class="glightbox" href="../INTERNAL-Managing-this-Documentation-assets/image5.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image5.png" src="../INTERNAL-Managing-this-Documentation-assets/image5.png" style="width:500px" /></a></p>
+<p>Now we will capture an image to put into our document. On a Mac you can capture screenshots
+using Shift-Cmd and numbers. Here is the whole screen and we want to capture the dog pictures:</p>
+<p><a class="glightbox" href="../INTERNAL-Managing-this-Documentation-assets/image6.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image6.png" src="../INTERNAL-Managing-this-Documentation-assets/image6.png" /></a></p>
+<p>Press Shift-Cmd-4 and then put the mouse over the dogs and press space. Now click on the dogs to
+capture the screen. This will save it to the desktop. You can copy the file into VS Code.</p>
+<p>If you look on your desktp you will see this file:</p>
+<p><a class="glightbox" href="../INTERNAL-Managing-this-Documentation-assets/image8.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image8.png" src="../INTERNAL-Managing-this-Documentation-assets/image8.png" style="width:500px" /></a></p>
+<p>Create a new directory in VS Code and call it Example-1-assets and copy the file into it.</p>
+<p><a class="glightbox" href="../INTERNAL-Managing-this-Documentation-assets/image10.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image10.png" src="../INTERNAL-Managing-this-Documentation-assets/image10.png" style="width:500px" /></a>
+<a class="glightbox" href="../INTERNAL-Managing-this-Documentation-assets/image11.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image11.png" src="../INTERNAL-Managing-this-Documentation-assets/image11.png" /></a></p>
+<p>Now you can click on the file in VS Code and copy it and paste it into your document (or type it 
+all in if you prefer)</p>
+<p><a class="glightbox" href="../INTERNAL-Managing-this-Documentation-assets/image12.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image12.png" src="../INTERNAL-Managing-this-Documentation-assets/image12.png" style="width:500px" /></a></p>
+<p>Now you need to add it to the index.md file. Add it anywhere, for example at the bottom of this section:</p>
+<div class="highlight"><pre><span></span><code>???+ quote &quot;Discussion&quot;
+
+<span class="w">    </span><span class="k">*</span><span class="w"> </span>[<span class="nt">Member Database Subscription Feature</span>](<span class="na">discussion/Member-Database-Subscription-Feature.md</span>)
+<span class="w">    </span><span class="k">*</span><span class="w"> </span>[<span class="nt">Member Database Options</span>](<span class="na">discussion/Member-Database-Options.md</span>)
+<span class="w">    </span><span class="k">*</span><span class="w"> </span>[<span class="nt">Planning a Standard BMX Timing System Installation USA Tracks</span>](<span class="na">discussion/Planning-a-Standard-BMX-Timing-System-Installation-USA-Tracks.md</span>)
+<span class="w">    </span><span class="k">*</span><span class="w"> </span>[<span class="nt">IP Address Fundamental</span>](<span class="na">discussion/IP-Address-Fundamentals.md</span>)
+<span class="w">    </span><span class="k">*</span><span class="w"> </span>[<span class="nt">Example 1</span>](<span class="na">discussion/Example-1.md</span>)
+</code></pre></div>
+<p>Now you can see your new file:</p>
+<p><a class="glightbox" href="../INTERNAL-Managing-this-Documentation-assets/image13.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="image13.png" src="../INTERNAL-Managing-this-Documentation-assets/image13.png" /></a></p>
 
 
 

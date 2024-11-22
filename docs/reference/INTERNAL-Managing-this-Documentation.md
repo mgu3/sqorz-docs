@@ -228,3 +228,53 @@ this will also show how to do tables which a quite easy.
 In this example we will use VS Code running on a Mac to create a new documentation
 page with pictures and tags.
 
+Start by creating a new file. In VS Code Ctrl-Click on the discussions directory and select **New File...**:
+
+![image3.png](INTERNAL-Managing-this-Documentation-assets/image3.png){: style="width:500px"}
+
+Lets call it Example-1.md
+
+![image4.png](INTERNAL-Managing-this-Documentation-assets/image4.png){: style="width:500px"}
+
+Enter some text into the file:
+
+![image5.png](INTERNAL-Managing-this-Documentation-assets/image5.png){: style="width:500px"}
+
+Now we will capture an image to put into our document. On a Mac you can capture screenshots
+using Shift-Cmd and numbers. Here is the whole screen and we want to capture the dog pictures:
+
+![image6.png](INTERNAL-Managing-this-Documentation-assets/image6.png)
+
+Press Shift-Cmd-4 and then put the mouse over the dogs and press space. Now click on the dogs to
+capture the screen. This will save it to the desktop. You can copy the file into VS Code.
+
+If you look on your desktp you will see this file:
+
+![image8.png](INTERNAL-Managing-this-Documentation-assets/image8.png){: style="width:500px"}
+
+Create a new directory in VS Code and call it Example-1-assets and copy the file into it.
+
+![image10.png](INTERNAL-Managing-this-Documentation-assets/image10.png){: style="width:500px"}
+![image11.png](INTERNAL-Managing-this-Documentation-assets/image11.png)
+
+Now you can click on the file in VS Code and copy it and paste it into your document (or type it 
+all in if you prefer)
+
+![image12.png](INTERNAL-Managing-this-Documentation-assets/image12.png){: style="width:500px"}
+
+Now you need to add it to the index.md file. Add it anywhere, for example at the bottom of this section:
+
+```markdown
+
+???+ quote "Discussion"
+    
+    * [Member Database Subscription Feature](discussion/Member-Database-Subscription-Feature.md)
+    * [Member Database Options](discussion/Member-Database-Options.md)
+    * [Planning a Standard BMX Timing System Installation USA Tracks](discussion/Planning-a-Standard-BMX-Timing-System-Installation-USA-Tracks.md)
+    * [IP Address Fundamental](discussion/IP-Address-Fundamentals.md)
+    * [Example 1](discussion/Example-1.md)
+```
+
+Now you can see your new file:
+
+![image13.png](INTERNAL-Managing-this-Documentation-assets/image13.png)
